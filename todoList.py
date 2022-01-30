@@ -1,5 +1,6 @@
 import json
 import os
+from pydoc import text
 
 from tkinter import *
 from tkinter import messagebox
@@ -118,6 +119,7 @@ ws.geometry('600x700')
 ws.title('Today\'s chores')
 ws.config(bg='#000000')
 ws.resizable(width=False, height=False)
+ws.protocol('WM_DELETE_WINDOW', closeWindow)
 
 frame = Frame(ws)
 frame.pack(pady=30)
